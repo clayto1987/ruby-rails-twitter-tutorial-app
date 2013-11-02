@@ -1,4 +1,11 @@
 TwitterTutorialApp::Application.routes.draw do
+
+  #/static_page/home accessed via GET will run the home action of the static_pages controller
+  match 'static_pages/home' => 'static_pages#home', :as => 'home', :via => :get
+  #/static_page/help accessed via GET will run the help action of the static_pages controller
+  match 'static_pages/help' => 'static_pages#help', :as => 'help', :via => :get
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
