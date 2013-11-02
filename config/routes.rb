@@ -6,6 +6,8 @@ TwitterTutorialApp::Application.routes.draw do
   match 'static_pages/help' => 'static_pages#help', :as => 'help', :via => :get
   #/static_page/about accessed via GET will run the about action of the static_pages controller
   match 'static_pages/about' => 'static_pages#about', :as => 'about', :via => :get
+  #/static_page/contact accessed via GET will run the contact action of the static_pages controller
+  match 'static_pages/contact' => 'static_pages#contact', :as => 'contact', :via => :get
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
